@@ -1,311 +1,154 @@
-﻿
-// To output to console, use the method Console.WriteLine();
-//Console.WriteLine("Hello, World!");
+﻿//Arrays and Lists
 
-//1)Output your name to the console
+//To Create an integer we would write
+int myNumber = 10;
 
-//To create comments, we can use 2 forward slashes '//'
-// and this line of code will not run
+//To Create an array we would write
+int[] myNumberArray = new int[10];
+//[] at the start means it's an array
+// When you want to create a new array, use the new keyword
+// followed by the data type and length of the array in brackets i.e. int[10]
+//When created, arrays are of a fixed length.
 
+//The values in the array at the moment will be 
+// 0,0,0,0,0,0,0,0,0,0
+//Values of an array you create will be the 'default' value for that data type
+//boolean - false
+//float - 0f
+//string - ""
+//class - null
 
-/// Using the console ///
-/// Basic Variables ///
-string myString = "Hello";
-int myWholeNumber = 12345;
-float myDecimalNumber = 1.01f; //needs an 'f' at the end to say that it's a float
-bool myBoolean = false; //Only false or true values
+//Set a value in an array, use the 'index' of the position in the array
+myNumberArray[0] = 123;
+//Arrays start from 0, so an array with length 10 has indices 0-9
 
-//2) Create a string for name and set it to your name
+//Uncomment these lines to see that it is working correctly.
+//Console.WriteLine("The value at index 0 is: " +myNumberArray[0]);
+//Console.WriteLine("The length of the array: " + myNumberArray.Length);
 
-//3) Create an integer for age and set it to your age
-
-//4) Create a floating number for your height in meters i.e. 1.65 meters.
-
-//5) Create a boolean for a value that might be true or false (do you like reading?)
-
-//You can output variables to the console
-//Console.WriteLine(myString);
-
-//6) Output your name to the console using the variable you have created
-//7) Can you do the same for ints, floats and booleans?
-
-
-///Basic operations with variables///
-//To add numbers
-// int integerA = 2
-// integerA = integerA + 5;   or    integerA += 5;
-
-//int integerB = 12
-//int integerC = integerA + integerB
-
-//8) Add 10 years to your age and write it to the console
-//9) Create a variable and multiply it by 6
-//10) Create a float and divide it by 2.3
-
-//What happens when you add 2 strings together??
-// string userFirstName = "John";
-// string userSecondName = "Smith";
-
-//11)What is the issue here? Fix it
-//string userFullName = userFirstName + userSecondName;
-//Console.WriteLine(userFullName);
-
-
-///Getting Input from the console
-//string userInput = Console.ReadLine();
-
-//12) How can you write the output back into the console
-
-//13) Improve this - if the user writes 'Banana', write back to the console 
-// "You chose: Banana"
-
-//The input from a user is always a string, even if that string is just numbers
-//int userInputNumber = Convert.ToInt32(userInput); 
-
-//14) Write to the console the number the user inputted times by 8.
-
-//Converting to floats requires a bit more work so for the purposes of these
-//Exersizes we will use strings and floats.
-
-
-///Challenge///
-//15) Create a simple program that asks for users first name, age, and height (in centimeters)
-//and then writes to the console
-//"Hi John, you are 55 years old and 165 centimeters tall. In 10 years time you will be 65"
-//Use Console.WriteLine() before the Console.ReadLine() to act as a prompt. 
-//The first bit is done for you
-
-//Console.WriteLine("Enter your first name:")
-//string userFirstName = Console.ReadLine();
+//1) Create a string array of length 5 called snacks
+// - assign each value in the array to a different snack i.e. chocolate, crisps
+// - Output to the console one of these values
 
 
 
-///Conditional code (if statements)
 
-//Sometimes you want to only happen if certain conditions are met. For this we can use if statements.
+//Lists are similar to arrays, the contain a group of one type of data. 
+//They are different because:
+// - Not a fixed size
+// - Have more functionality to add and remove items from them
+// - Has more functionality to iterate and search for data.
+// - Are less memory efficient.
+//Use lists when you don't know the size of the data you will be working with
 
-bool isThereADog = false;
+List<int> myNumberList = new List<int>();
+//The <int> here is how we specify what type of data
+// List<> is a class, so when we create one we call a constructor List<>();
 
-if(isThereADog == true)
+//By default, the list has no length
+//Console.WriteLine(myNumberList.Count);
+
+//To add To the list - this will add the number '10' to the end of the list
+myNumberList.Add(10);
+//Console.WriteLine(myNumberList[0]);
+
+
+//Adding more items to the list
+//myNumberList.Add(11);
+//myNumberList.Add(12);
+//Console.WriteLine(myNumberList.Count);
+
+// .Remove() will take the first item from the list out that matches.
+//myNumberList.Remove(10);
+//Console.WriteLine(myNumberList[0]);
+
+//Removes item at index 0
+//myNumberList.RemoveAt(0); 
+//Finds first index containing that value
+//myNumberList.IndexOf(11);
+//Adds a value at specified index
+//myNumberList.Insert(1, 14);
+
+
+//2A) Create a list of 4 animals from smallest to biggest
+////i.e ant, mouse, cat, elephant
+
+
+//2B) Use .Insert() to add another 2 animals in the space that they would fit in size order.
+
+
+
+//3) Here is a list of 5 boolean values, 4 true values and one false value
+List<bool> switches = new List<bool>([true, true, false, true, true]);
+
+//Find the index of the false value, and store it as an integer
+
+//Use this index to remove the false value from the list using RemoveAt
+
+//Output the length of the list to the console to show you have removed the false value
+
+
+//While, For, Foreach.
+//When we have a list or an array, it's useful to have code that can loop through all of the items.
+//We don't need an array for a loop, so we will look at the different types of loops first
+
+//While loop
+int xCounter = 10;
+
+//(counter > 0) is compared to like an if statement, but instead of running the code once,
+//it will keep running it until this statement resolves to be false
+while (xCounter > 0)
 {
-    //Console.WriteLine("Woof");
+    xCounter -= 1;
+
+    //Before you run this what value do you think will be the first and last to be output.
+    //Console.WriteLine("Value of xCounter: " + xCounter);
 }
 
-//You can compare strings too.
+//4) Create a while loop that adds 0.1f to a float variable each time it loops.
+//The float value should start at -5, and the loop should continue until it reaches 5.
+//Output something like "Value of float : X" each time the loop happens.
 
-string password = "minecraft";
+//5) Create a string variable called password, and a string variable called guess
+// Run a while loop that compares the user guess to the password,
+// if they are not the same, the loop continues and asks for another input
+//if they are the same, the loop should end and  'access granted' logged to the console.
 
-//16)Fix this so that "Access Granted" is outputted to the console
-if (password == "roblox")
+//6) Create a simple higher or lower game. Each time the user guesses,
+//the game should print out 'higher' or 'lower'
+//if the guess is correct, it should print out 'you win'
+
+
+//For loop
+//A while loop keeps happening until a certain condition is met.
+//A for loop happens a certain number of times, i.e. run this loop 50 times.
+//The syntax (strcuture of code) for a for loop can look a bit confusing at first
+//But most of the time you will write the same code out so you will become familiar with it
+
+//Inside of the brackets can be broken down into 3 statements
+// int i = 0; - creating a variable 
+// i < 10; - the condition that is checked at the start of each loop
+// i++; - incrementing the variable at the end of each loop. i++ is the same as i=i+1;
+for (int i = 0; i < 10; i++)
 {
-    Console.WriteLine("Access Granted.");
+    Console.WriteLine(i);
 }
 
-//17) Add some code above here to get input from the user typing in the password instead.
+//7) Create a for loop that loops from 20 to 30, incrementing by 2 each time
+//output this to the console
 
-int howManyApples = 10;
 
-if(howManyApples > 10)
-{
-   // Console.WriteLine("That's a lot of apples");
-}
 
-if(howManyApples >= 10)
-{
-  //Console.WriteLine("There's 10 or more apples.");
-}
 
-//18) How could you check for 4 or less apples?
 
 
-//Sometimes you want to run code if the condition is NOT met.
-int bananas = 23;
-if (bananas > 100)
-{
-  //  Console.WriteLine("You have so many bananas");
-}
-else
-{
-   // Console.WriteLine("Ive seen more bananas");
-}
 
+///Challenges
 
-//Sometimes you want to check multiple conditions at the same time\\
-//Only one of these blocks of code will run.
-if (bananas > 100)
-{
-   //Console.WriteLine("You have so many bananas");
-}
-else if (bananas > 50)
-{
-   //Console.WriteLine("That's a lot of bananas, but Ive seen more.");
-}
-else
-{
-   //Console.WriteLine("That's not a lot of bananas");
-}
+//Improve the higher or lower game so that the player has a number of lives to guess the right number
 
-
-/// Challenge ///
-//19) Improve your input from task #15. It should take the same input, but if the user is above 60 it should say "You are old" after the age,
-////if between 18-60 it should say "You are an adult"
-//if less than 18 it should say "You are a child"
-
-
-///Methods - Reusable Code.
-
-void MyMethod()
-{
-    Console.WriteLine("This is the code in MyMethod");
-}
-
-void MyOtherMethod()
-{
-    Console.WriteLine("This is the code in MyOtherMethod");
-}
-
-//20) Uncomment this
-//MyMethod();
-
-// - Allows you to Group code together in 'blocks' of logic, that perform a specific operation
-// - Allows you to reuse that code, without writing it out over and over again
-// - Can take 'parameters', which can change how the method might function.
-
-
-//21) Create a method that prints numbers 1-5 like
-//1
-//2
-//3
-//4
-//5
-
-
-//Method with parameters
-void RepeatWord(string word)
-{
-    string sentence = "You just wrote: " + word;
-    Console.WriteLine(sentence);
-}
-
-void DoubleNumber(int number)
-{
-    int total = number * 2;
-    Console.WriteLine(total);
-}
-
-
-//22) Create a method that prints numbers giving a starting number as a parameter
-//i.e. starting at 12
-//12
-//13
-//14
-//15
-//16
-
-void HowMuchFruit(string fruit, int amount)
-{
-    if (bananas > 100)
-    {
-        string output = "You have so many " + fruit; 
-        Console.WriteLine(output);
-    }
-    else
-    {
-        string output = "Ive seen more " + fruit;
-        Console.WriteLine(output);
-    }
-}
-
-
-//23)Create a method that takes 2 numbers and prints out the larger number
-
-//24)Create a method that takes 2 words and prints out the largest? hint; use .length (the '.' is like looking deeper within the variable)
-
-
-
-///Classes and OOP///
-
-
-//Challenge - Drink Class
-//Name, Colour, isFizzy
-//Create Fanta, Pepsi, Vimto, Milk (or any of your choice).
-
-//Class Constructors - improve the code you have written.
-
-//Add 'quantity' integer (private variable).
-
-//DrinkOne()
-
-//DrinkSome(x)
-
-//Restock(x)
-
-//PrintInfo()
-//Fanta is a Fizzy Drink that is yellow.
-
-//PrintQuantity()
-//There are 10 Fantas.
-
-
-/// Challenge ///
-/// - Create a user class, that uses the input logic from before, but stores it in a class.
-// Add a GetUserInfo() method, that takes a password as a parameter, if this is correct, then it should print the users info.
-//Add a ChangeName() Method, that takes a password, and a  name parameter
-//Add A ChangeAge() Method
-
-///Challenge///
-/// - Create a class for another type of data, maybe pets? It should have at least 4 variables, and at least one string, int, and float
-/// - It should contain at least one method with no parameters
-/// - It should contain at least one method with one parameter, to set one of the variables.
-
-
-///Challenge///
-///Improve your 'user' class, 
-/// Create a method called AmIOlderThan(x) which takes an integer and compares it to the age, it should print out
-/// John is older than 56
-/// or
-/// John is 56
-/// or 
-/// John is younger than 56
-/// (depending on the age of the user, need to use if...else)
-/// 
-
-///Challenge///
-///
-
-///Challenge///
-///
-
-///Challenge///
-/// https://www.w3schools.com/cs/cs_while_loop.php
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+//Allow for another user to pick the number before the game begins. Hint: you can use Console.Clear();
+//to remove previous writing 
 
 
 

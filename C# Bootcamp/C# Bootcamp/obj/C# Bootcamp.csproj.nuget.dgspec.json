@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\olive\\source\\repos\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj": {}
+    "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\olive\\source\\repos\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj": {
+    "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\olive\\source\\repos\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj",
+        "projectUniqueName": "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj",
         "projectName": "C# Bootcamp",
-        "projectPath": "C:\\Users\\olive\\source\\repos\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj",
+        "projectPath": "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\C# Bootcamp.csproj",
         "packagesPath": "C:\\Users\\olive\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\olive\\source\\repos\\C# Bootcamp\\C# Bootcamp\\obj\\",
+        "outputPath": "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
