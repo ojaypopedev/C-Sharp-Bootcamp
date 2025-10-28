@@ -138,17 +138,74 @@ for (int i = 0; i < 10; i++)
 //output this to the console
 
 
-
-
-
-
-
 ///Challenges
 
 //Improve the higher or lower game so that the player has a number of lives to guess the right number
 
 //Allow for another user to pick the number before the game begins. Hint: you can use Console.Clear();
 //to remove previous writing 
+
+/////////////////////////////////////////
+
+//8) Log to the console each of the continents
+string[] continents = [ "Africa", "Antarctica", "Asia", "Europe", "North America", "Oceania", "South America" ];
+
+for (int i = 0; i < continents.Length; i++)
+{
+
+}
+
+//9) double the value of each of the numbers in the array 
+int[] numbers = [1, 2, 3, 4, 5];
+for (int i = 0;i < numbers.Length; i++)
+{
+    
+}
+
+//10) Go through the array of continents, and any that start with 'A', add to this list
+// hint: you can index a string like an array.
+List<string> continentsA = new List<string>();
+
+
+//11) Go through the array of numbers, and find the biggest number, then print it.
+int[] bigNumbers = [74918, 28471, 85647, 19395, 96230, 41029, 52734, 17847, 63825, 39582];
+int biggestNumber = 0;
+
+for (int i = 0; i < bigNumbers.Length;i++)
+{
+
+}
+
+if(biggestNumber > 0)
+{
+    Console.WriteLine("The Biggest Number in the Array is : " + biggestNumber);
+}
+
+
+//12) Find the smallest number in the numbers array
+
+//13) Find the range of the values (biggest - smallest) in the array
+
+//14) Find the average (mean) of the numbers in the bigNumbers Array.
+
+//Challenge
+//Create a program in a new file, it should
+//Create an empty list<string> called names
+//The program should use Console.ReadLine to take user input
+//Add the user input to the list, and then read it again
+//hint: use a while loop
+//We need some way to exit the program, so if the user types in 'end'
+//the while loop should exit, and not add the name to the list
+//hint: you can use 'break;' inside of a while loop to force it to stop
+
+//At the end of the program (after user types 'end')
+//Write out to the console all of the names, as a list seperated by commas
+//i.e. John, Abigail, Tony, Heather, Samantha
+// hint 1: use a for loop
+// hint 2: you can use += to a string to add to it. 
+
+
+
 
 
 
