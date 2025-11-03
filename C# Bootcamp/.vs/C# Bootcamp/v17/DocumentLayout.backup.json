@@ -5,6 +5,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{9296EB7D-78BC-468D-AF12-5611EE4D0CA8}|C# Bootcamp\\C# Bootcamp.csproj|c:\\development\\tutoring\\c-sharp-bootcamp\\c# bootcamp\\c# bootcamp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{9296EB7D-78BC-468D-AF12-5611EE4D0CA8}|C# Bootcamp\\C# Bootcamp.csproj|solutionrelative:c# bootcamp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9296EB7D-78BC-468D-AF12-5611EE4D0CA8}|C# Bootcamp\\C# Bootcamp.csproj|c:\\development\\tutoring\\c-sharp-bootcamp\\c# bootcamp\\c# bootcamp\\scripts\\exampleclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9296EB7D-78BC-468D-AF12-5611EE4D0CA8}|C# Bootcamp\\C# Bootcamp.csproj|solutionrelative:c# bootcamp\\scripts\\exampleclass.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,11 +18,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cf577b8c-4134-11d2-83e5-00c04f9902c1}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ExampleClass.cs",
+              "DocumentMoniker": "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\Scripts\\ExampleClass.cs",
+              "RelativeDocumentMoniker": "C# Bootcamp\\Scripts\\ExampleClass.cs",
+              "ToolTip": "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\Scripts\\ExampleClass.cs",
+              "RelativeToolTip": "C# Bootcamp\\Scripts\\ExampleClass.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-28T19:01:56.437Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -28,7 +45,7 @@
               "RelativeDocumentMoniker": "C# Bootcamp\\Program.cs",
               "ToolTip": "C:\\Development\\Tutoring\\C-Sharp-Bootcamp\\C# Bootcamp\\C# Bootcamp\\Program.cs",
               "RelativeToolTip": "C# Bootcamp\\Program.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAAAIsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-20T21:00:34.085Z",
               "EditorCaption": ""
