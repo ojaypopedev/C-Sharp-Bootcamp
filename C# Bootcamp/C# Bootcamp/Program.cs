@@ -78,6 +78,17 @@ bool myBoolean = false; //Only false or true values
 //Console.WriteLine("Enter your first name:")
 //string userFirstName = Console.ReadLine();
 
+//Challenge//
+//Create a simple program that asks a user for 2 numbers
+//The program should convert each string input to an integer,
+//Add those 2 integers together, and print out the result
+
+//i.e. 
+//Enter first number : 
+//10
+//Enter second number : 
+//15
+//The 2 numbers added together = 25
 
 
 ///Conditional code (if statements)
@@ -204,7 +215,7 @@ void DoubleNumber(int number)
 
 void HowMuchFruit(string fruit, int amount)
 {
-    if (bananas > 100)
+    if (amount > 100)
     {
         string output = "You have so many " + fruit; 
         Console.WriteLine(output);
