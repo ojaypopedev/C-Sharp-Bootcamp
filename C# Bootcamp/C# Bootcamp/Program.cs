@@ -12,7 +12,6 @@
 //Using this is helpful for doing the calculation, but it doesn't store the value
 //We can use a return type to give a value back from a method, instead of just logging it
 
-using System.ComponentModel;
 
 int Power(int number, int power)
 {
@@ -126,7 +125,6 @@ List<int> NumberLine(int start, int end)
 //What are all the methods that Class D can use
 
 //Drawing a Diagram of the class structure can often help
-
 
 
 
