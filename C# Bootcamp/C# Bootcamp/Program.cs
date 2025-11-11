@@ -21,7 +21,7 @@ bool myBoolean = false; //Only false or true values
 
 //4) Create a floating number for your height in meters i.e. 1.65 meters.
 
-//5) Create a boolean for a value that might be true or false (do you like reading?)
+//5) Create a boolean for a value that might be true or false (do you like coding?)
 
 //You can output variables to the console
 //Console.WriteLine(myString);
@@ -104,10 +104,10 @@ if(isThereADog == true)
 
 //You can compare strings too.
 
-string password = "minecraft";
+string password = "helloworld";
 
 //16)Fix this so that "Access Granted" is outputted to the console
-if (password == "roblox")
+if (password == "hello123")
 {
     Console.WriteLine("Access Granted.");
 }
